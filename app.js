@@ -8,7 +8,7 @@ var config = {
       "PASS"    : "",
       "HOST"    : "ec2-34-209-113-86.us-west-2.compute.amazonaws.com",  
       "PORT"    : "27017", 
-      "DATABASE" : "my_example"
+      "DATABASE" : "shopping"
     };
 var dbPath  = "mongodb://"+config.USER + ":"+
     config.PASS + "@"+
