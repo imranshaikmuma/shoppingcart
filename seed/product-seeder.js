@@ -1,8 +1,22 @@
 var Product = require('../models/product');
 var mongoose =require('mongoose');
-mongoose.connect('localhost:27017/shopping');
+var db;
+var config = {
+      "USER"    : "",           
+      "PASS"    : "",
+      "HOST"    : "ec2-34-209-113-86.us-west-2.compute.amazonaws.com",  
+      "PORT"    : "27017", 
+      "DATABASE" : "shopping"
+    };
+var dbPath  = "mongodb://"+config.USER + ":"+
+    config.PASS + "@"+
+    config.HOST + ":"+
+    config.PORT + "/"+
+    config.DATABASE;
+var standardGreeting = 'Hello World!';
 
-
+mongoose.connect(dbPath);
+#mongoose.connect('localhost:27017/shopping');
 
 var products = [
 	new Product({
