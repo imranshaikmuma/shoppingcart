@@ -1,21 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @imranshaikmuma
- Sign out
- Unwatch 1
-  Star 0
-  Fork 0 imranshaikmuma/shoppingcart
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathshoppingcart/seed/product-seeder.js
-955c994  36 minutes ago
-@imranshaikmuma imranshaikmuma Update product-seeder.js
-1 contributor
-RawBlameHistory     
-58 lines (50 sloc)  1.33 KB
 var Product = require('../models/product');
 var mongoose =require('mongoose');
 var db;
