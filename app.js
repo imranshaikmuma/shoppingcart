@@ -3,6 +3,13 @@ var mongoose  = require('mongoose');
 var express   = require('express');
 var app    = express();
 var db;
+var path = require('path');
+var favicon = require('serve-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var expressHbs = require('express-handlebars');
+var index = require('./routes/index');
 var config = {
       "USER"    : "",           
       "PASS"    : "",
@@ -15,7 +22,7 @@ var dbPath  = "mongodb://"+config.USER + ":"+
     config.HOST + ":"+
     config.PORT + "/"+
     config.DATABASE;
-var standardGreeting = 'Hello World!';
+//var standardGreeting = 'Hello World!';
 //var greetingSchema = mongoose.Schema({
 //  sentence: String
 //}); 
